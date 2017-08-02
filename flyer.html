@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>web flyer</title>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"  href="style.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<main>
+<div id="leftdiv" class="stylediv">
+ <img src="images/logo.png" alt="logo"/>
+ <h1 class="text-primary"> We are coming soon!</h1>
+ <form>
+  <h2 class="text-warning" style="padding-bottom:20px; text-transform:uppercase;">Get in touch</h2>
+  <div class="form-group">
+  <label for="email" style="color:white;">Sign up to subscribe</label>
+<div class="col-sm-12" > 
+  <input type="email" class="form-control col-sm" id="email">
+</div>
+ </div>
+<!--<span class="fa fa-facebook-square fa-2x"></span>
+<span class="fa fa-twitter-square fa-2x"></span><br>-->
+<button type="submit" class="btn btn-warning">Submit</button>
+ </form>
+</div>
+<div id="rightdiv" class="stylediv">
+<div class="fa fa-clock-o text-success" style="color:blue; padding:90px 30px; font-size:180px;"></div>
+<div id="clockdiv">
+  <span class="days"></span> Days <span class="hours"></span> Hours <span class="minutes"></span> Minutes <span class="seconds">0</span> Seconds
+<script type="text/javascript">
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+</script>
+</div>
+</div>
+<footer class="text-center">
+<p>&copy; All rights reserved.</p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+margin:0 auto;
+padding:0;
+}
+
+.stylediv{
+/*background: -o-linear-gradient(grey,black);
+background: -moz-linear-gradient(grey, black);*/
+background-color:#f62525;
+float:left;
+padding: 20px 0px;
+width:50%;
+text-align:center;
+height:540px;
+}
+
+#leftdiv img{width:290px;
+height:160px;}
+
+form{padding:100px 30px;}
+
+span{font-size:38px;
+padding-top:0px;
+color:white;
+}
+
+#clockdiv{color:white;}
+
+footer{clear:both;
+background-color:#f62525;
+color:white;
+padding:20px 0;
+}
