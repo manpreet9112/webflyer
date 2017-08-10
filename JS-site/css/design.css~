@@ -147,6 +147,10 @@ padding:10px 0;
 margin:60px 0;
 }
 
+h5{
+font-weight:bold;
+}
+
 .glyphicon-ring {
   width: 80px;
   height: 80px;
@@ -167,5 +171,37 @@ margin:60px 0;
   background: #f62525;
 }
 
+.social{padding:14px 0;
+}
 
+footer{
+text-align:center;
+padding:30px 0;
+background-color:black;
+color:grey;
+}
+
+footer:hover{
+color:white;
+}
+
+footer i{
+margin-top:6px;
+}
+
+footer #facebook:hover{
+background-color: #3b5998;
+}
+
+footer #twitter:hover{
+background-color:#0084b4;
+}
+
+footer #googleplus:hover{
+background-color:red;
+}
+
+
+
+ 
 
