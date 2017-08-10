@@ -6,10 +6,15 @@
   <title>JS Engg. Works</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/design.css">
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+ <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+ <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css ">
+<script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.3.7/js/tests/vendor/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/design.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -30,12 +35,16 @@
 </div>
 <section>
 <h2 class="h2text">Product List</h2>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
-<div class="floating-box">Floating box</div>
+<div class="floating-box">
+<!--<img src="images/SG8.jpg" class="img-circle" alt="Steel Gear 8834 " width="140" height="140"> <br>-->
+<h4>Gear Hook Shaft 8886 </h4>
+It is made up of shaft and gear. We manufacture two types of Gear Hook Shaft such as small and large size. </div>
+<div class="floating-box"><h4>Hook Shaft Steel Bush </h4>Item of Embroidery machine. We sell this item individully and  combine with Lapping Set. </div>
+<div class="floating-box"><h4>Steel Gear 8834 </h4>It is a spare part of Emboidery machine. It contain 2 holes over it, so that it can get into machine. </div>
+<div class="floating-box"><h4>Lapping set </h4>
+This item (Lapping set) is used in sewing machine. We use best raw material to manufacture this item. Price of this is around Rs. 25. </div>
+<div class="floating-box"><h4>Fiber Gear</h4>Lapping Set and Hook Shaft.This is made up of fiber and we sell this item individually and including with Lapping Set and Hook Shaft.</div>
+<div class="floating-box"><h4>Tip Holder</h4>It is (Tip Holder) a Valve Seat Cutting Tools that we manufacture using CNC machines. Lapping Set and Hook Shaft.This is made up of fiber.</div>
 </section>
 <!--<section>
 <h2 class="h2text">Product List</h2>
@@ -82,7 +91,7 @@ description
 
 <div id="gallary">
 <h2 class="h2data">Gallary</h2>
- <img src="images/SG8.jpg" class="img-rounded" alt="Steel Gear 8834 " width="300" height="200"> 
+ <img src="images/SG8.jpg" class="img-rounded" alt="Steel Gear 8834 " width="200" height="200"> 
  <img src="images/GHS8.jpg" class="img-rounded" alt=" Gear Hook Shaft 8886" width="300" height="200"> 
  <img src="images/HSSB.jpg" class="img-rounded" alt="HSSB" width="300" height="200"> 
  <img src="images/SCP.jpg" class="img-rounded" alt="SCP " width="300" height="200"> 
@@ -90,12 +99,67 @@ description
 <img src="images/TH.jpg" class="img-rounded" alt="TH" width="300" height="200"> 
 <img src="images/LS.jpg" class="img-rounded" alt="LS" width="300" height="200"> 
 <img src="images/CRA.jpg" class="img-rounded" alt="CRA" width="300" height="200"> 
-<img src="images/VSC.jpg" class="img-rounded" alt="VSC" width="300" height="200"> 
 </div><!------ ----Gallary end ------------>
 <div id="contactus">
-hjdhskjdh
+ <h2 class="h2data">Get in <span class="content-header">touch with us</span></h2>
+<div class="container">
+<form>
+<div class="col-md-6 form-line"> 
+<div class="form-group">
+ <label for="name">Your Name:</label>
+ <input type="text" class="form-control" id="name" placeholder="Name">
+</div>
+<div class="form-group">
+  <label for="email">Email</label>
+  <input type="email" class="form-control " id="email"    placeholder="Email:">
+</div>
+<!--<div class="form-group">
+      <label for="telephone">Mobil:</label>
+      <input type="tel" class="form control" id="telephone" placeholder="Enter Mobile no. here">  
+</div>-->
+
+<div class="form-group">
+ <label for="telephone">Mobile No.</label>
+ <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+</div>
+<div class="form-group">
+ <label for="description">Message</label>
+ <textarea class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+</div> 
+<button type="submit" class="btn btn-danger ribbon"><i class="fa fa-paper-plane">Send Message</i></button>
+</div>
+<!--------- MAP --------->
+<div> <h5>Find us on Map</h5></div>		
+<div id="map" style="width:500px;height:300px; background-color:yellow; float:right;"> </div>
+<script>
+function myMap(){
+  var myOptions={
+   center: new google.maps.LatLng(30.900965, 75.8572758),
+   zoom: 10,
+   mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map=new google.maps.Map(document.getElementById("map"),myOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
+</script>
+</form>
+</div>
+  <div id="social">
+     <div class="col-sm-3">
+       <div class="glyphicon-ring glyphicon-red"><san class="glyphicon glyphicon-phone glyphicon-bordered"></span></div>        
+    <p> this is a an email address of the company</p>
+
+     </div>
+     <div class="col-sm-3">box </div>
+     <div class="col-sm-3">box</div>
+     <div class="col-sm-3">box</div>
+
+  
+</div><!---main div-->
 </div>
 
+<footer>&copy; All rights reserved</footer>
 
 </body>
 </html>
