@@ -1,0 +1,238 @@
+  <!DOCTYPE html>  <html>
+  <head>
+  <meta charset="UTF-8">
+  <head>
+    <title>JS Engg. Works</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+  <!--<link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+   <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+  <script src="bootstrap-3.3.7/js/tests/vendor/jquery.min.js"></script>-->
+
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css ">
+  <link rel="stylesheet" type="text/css" href="css/design.css">
+  </head>
+  <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">JS</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#product">Products</a></li>
+         <li><a href="#gallary">Gallary</a></li>
+         <li><a href="#contactus">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+
+</script>
+
+
+  <div id="slider" class="carousel slide" data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#slider" data-slide-to="0" class="active"></li>
+      <li data-target="#slider" data-slide-to="1"></li>
+      <li data-target="#slider" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/head.jpg" alt="Los Angeles" style="width:100%; height:700px;">
+        <div class="carousel-caption">
+          <h3>Welcome to J.S Engg. Works!</h3><hr id="hline">
+          <p>One of the manufacturer of sewing machine's parts.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/blackhead.jpg" alt="Chicago" style="width:100%; height:700px;">
+        <div class="carousel-caption">
+          <h3>Looking for Quality!</h3><hr id="hline">
+          <p>We are here.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/head3.jpg" alt="New York" style="width:100%; height:700px;">
+        <div class="carousel-caption">
+          <h3>Looking for Embroidery Machine's</h3><hr id="hline">
+          <p>We are dealer of Embroidery machines.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#slider" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#slider" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+<div class="container text-center">
+  <div class="row" 
+  <div id="product" class="col-sm-12 col-md-12 col-md-12">
+  <h2 class="h2text">Product List</h2>
+  </div>
+<div class="row">
+  <div class="col-md-4 col-sm-6 col-xs-3">
+  <!--<img src="images/SG8.jpg" class="img-circle" alt="Steel Gear 8834 " width="140" height="140"> <br>-->
+  <h4>Gear Hook Shaft 8886 </h4>
+  It is made up of shaft and gear. We manufacture two types of Gear Hook Shaft such as small and large size. </div>
+  <div class="col-md-4"><h4>Hook Shaft Steel Bush </h4>Item of Embroidery machine. We sell this item individully and  combine with Lapping Set. </div>
+  <div class="col-md-4"><h4>Steel Gear 8834 </h4>It is a spare part of Emboidery machine. It contain 2 holes over it, so that it can get into machine. </div>
+  <div class="col-md-4"><h4>Lapping set </h4>
+  This item (Lapping set) is used in sewing machine. We use best raw material to manufacture this item. Price of this is around Rs. 25. </div>
+  <div class="col-md-4"><h4>Fiber Gear</h4>Lapping Set and Hook Shaft.This is made up of fiber and we sell this item individually and including with Lapping Set and Hook Shaft.</div>
+  <div class="col-md-4"><h4>Tip Holder</h4>It is (Tip Holder) a Valve Seat Cutting Tools that we manufacture using CNC machines. Lapping Set and Hook Shaft.This is made up of fiber.</div>
+</div>
+  </div>
+</div>
+
+
+ <div class="row">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+   <h2 class="h2data">About Us</h2>
+  </div>
+  <div id="about">
+      <p>Established in the year 1991 at Ludhiana(Punjab,India).We <b>"J.S Engg.Works",</b> are highly engaged in <b>manufacturing</b> and <b>supplying</b> outstanding range of <b>Embroidery Sewing Machine spare part</b>.Firstly our industry was doing the labour job work of lath machine.At the same time we are manufacturing the Embroidery machine spare part.But in the past time production was very low.
+        In short span of time,we have established ourselves as trustworthy organization in the entire industry.The feature such as Quality, Dimensions, Accuracy are the hallmarks of our products.These products are manufactured using the best raw material as per pre-defined standards.</p>
+      <p class="text"> We are manufactured of Embroidery Sewing Machine spare parts like Gear Hook Shaft(8886),Steel Gear 8834,Hook Shaft Steel Bush En-8 and complete Lapping Set and Fiber Gear and Auto parts and Three Wheeler Parts(Ape Alfa,Piaggio Cross Rod,Front & Real Axle) ,Cross Gear Shaft,GC Auto,Alpha Auto and CNC turning  job work of all parts.</p>
+  </div>
+</div>
+
+
+<!------ ----About us end ------------>
+  
+  <div id="gallary">
+  <h2 class="h2data">Gallary</h2>
+   <img src="images/SG8.jpg" class="img-rounded" alt="Steel Gear 8834 " width="200" height="200"> 
+   <img src="images/GHS8.jpg" class="img-rounded" alt=" Gear Hook Shaft 8886" width="300" height="200"> 
+   <img src="images/HSSB.jpg" class="img-rounded" alt="HSSB" width="300" height="200"> 
+   <img src="images/SCP.jpg" class="img-rounded" alt="SCP " width="300" height="200"> 
+   <img src="images/BH.jpg" class="img-rounded" alt="BH" width="300" height="200"> 
+  <img src="images/TH.jpg" class="img-rounded" alt="TH" width="300" height="200"> 
+  <img src="images/LS.jpg" class="img-rounded" alt="LS" width="300" height="200"> 
+  <img src="images/CRA.jpg" class="img-rounded" alt="CRA" width="300" height="200"> 
+  </div><!------ ----Gallary end ------------>
+
+
+<div id="contactus">
+    <h2 class="h2data">Get in <span class="content-header">touch with us</span></h2>
+    <div class="container">
+     <form>
+      <div class="col-md-6 form-line"> 
+        <div class="form-group">
+       <label for="name">Your Name</label>
+       <input type="text" class="form-control" id="name" placeholder="Name">
+     </div>
+     <div class="form-group">
+       <label for="email">Email</label>
+       <input type="email" class="form-control " id="email"    placeholder="Email:">
+    </div>
+  <!--<div class="form-group">
+        <label for="telephone">Mobil:</label>
+        <input type="tel" class="form control" id="telephone" placeholder="Enter Mobile no. here">  
+  </div>-->
+  
+  <div class="form-group">
+   <label for="telephone">Mobile No.</label>
+   <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+  </div>
+  <div class="form-group">
+   <label for="description">Message</label>
+   <textarea class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+  </div> 
+  <button type="submit" class="btn btn-danger ribbon"><i class="fa fa-paper-plane">Send Message</i></button>
+  </div>
+  <!--------- MAP --------->
+  <div> <h5>Find us on Map</h5></div>		
+  <div id="map" style="width:520px;height:300px; background-color:yellow;  margin-right:50px; float:right;"> </div>
+  <script>
+  function myMap(){
+    var myOptions={
+     center: new google.maps.LatLng(30.900965, 75.8572758),
+     zoom: 10,
+     mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map=new google.maps.Map(document.getElementById("map"),myOptions);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
+  </script>
+  </form>
+
+  </div>
+    <div id="social">
+     <div class="container">
+       <div class="col-sm-4">
+         <div class="glyphicon-ring glyphicon-red"><san class="glyphicon  glyphicon-map-marker glyphicon-bordered"></span></div>        
+      <p class="social">House No. 164, Street No.7L,<br> Isher Nagar, Backside G.N.E College, Ludhiana. </p>
+  
+       </div>
+       <div class="col-sm-4"><div class="glyphicon-ring glyphicon-red"><san class="glyphicon glyphicon-envelope glyphicon-bordered"></span></div>        
+      <p class="social">jsenggworks1991@gmail.com</p>
+      </div>
+       <div class="col-sm-4">
+         <div class="glyphicon-ring glyphicon-red"><san class="glyphicon fa fa-phone glyphicon-bordered"></span></div>        
+      <p class="social">Jagjeet Singh</br> +91 9781312128</p>
+       </div>
+   </div>
+  </div>
+ </div>
+  
+<footer>&copy; All rights reserved 2017<br>
+<i class="fa fa-facebook" id="facebook" style="font-size:20px; padding:10px"></i> 
+<i class="fa fa-google-plus"  id="googleplus" style="font-size:20px; padding:10px"></i>
+<i class="fa fa-twitter" id="twitter" style="font-size:20px; padding:10px"></i> 
+ </footer>
+  
+  </body>
+  </html>
