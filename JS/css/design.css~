@@ -1,5 +1,5 @@
 body {
-margin:0 auto;
+margin:0;
 }
 
 #logo{background-color:black;
@@ -54,11 +54,14 @@ border: solid 2px #fd142f;
 }
 
 #about{background-color:#2d2d2d;
-text-align:center;
 color:white;
-padding:10px 150px;
-font-style: normal;
+padding:10px 100px;
 }
+/*
+text-align:center;
+
+font-style: normal;
+}*/
 
 
 section{background-color:white;
