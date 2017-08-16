@@ -98,13 +98,6 @@ text-align:center;
 
 }
 
-.boldtext{
-color:#f62525;
-font-size:46px;
-text-align:center;
-padding:200px 60px;
-}
-
 .sub-h2{
 color:#f62525;
 text-align:center;
@@ -116,7 +109,8 @@ background:url(../images/head.jpg) no-repeat center;
 background-size:100% 100%;
 text-align:center;
 color:white;
-padding:10px 150px;
+padding:10px auto;
+padding-bottom:20px;
 }
 
 #gallary img{margin:5px;
@@ -200,7 +194,6 @@ background-color:red;
 
 
 .container{padding:10px 0;}
-
 
  
 
