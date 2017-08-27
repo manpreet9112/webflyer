@@ -152,7 +152,7 @@ $(document).ready(function(){
 <!------ ----About us end ------------>
  <div class="container-fluid"> 
 <div class="row">
-  <div id="gallary" class="col-md-12 col-sm-6">
+  <div id="gallary" class="col-md-12 col-sm-12">
   <h2 class="h2data">Gallary</h2>
    <img src="images/SG8.jpg" class="img-rounded" alt="Steel Gear 8834 " width="200" height="200"> 
    <img src="images/GHS8.jpg" class="img-rounded" alt=" Gear Hook Shaft 8886" width="300" height="200"> 
