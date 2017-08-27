@@ -15,10 +15,9 @@
 </head>
 <body>
 <div class="container-fluid text-center" style="background-color:#2d2d2d;">
-<div id="main">
   <div class="row">
 
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-12">
 
          <img src="images/logo1.png" alt="logo" />
          <h1><span class="whitefont" >Launch<br> <span class="pinkfont">pad</span></span><span class="smaller">STUDENT EXIBITION</span><h1>
@@ -48,7 +47,7 @@
     </div><!-- col-md-6 div-->
 
 
-    <div class="col-md-6" style="color:white;">
+    <div class="col-md-6 col-sm-12" style="color:white;">
 
        
      <div class="fa fa-clock-o text-danger" style="color:blue; padding:90px 30px; font-size:140px;"></div>
@@ -106,7 +105,7 @@ initializeClock('clockdiv', deadline);
     </div><!-- col-md-6 -->
    </div><!-- row div -->
 
-</div>
+
 
 <div class="row">
 
