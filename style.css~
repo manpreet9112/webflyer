@@ -4,8 +4,8 @@ padding:0;
 }
 
 img{height:300px;
-width:400px;
-margin:18px;
+width:380px;
+margin:14px 0;
 }
 
 
